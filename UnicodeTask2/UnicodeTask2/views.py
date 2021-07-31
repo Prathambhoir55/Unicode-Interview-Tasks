@@ -7,5 +7,5 @@ def pokemon(request):
     poketype=x.json()    #Also can use poketype=json.loads(x.text)
     output=''
     for i in poketype["results"]:
-        output=output + '\n' +  i['name'] 
+        output=output + ' ' +  i['name'] 
     return HttpResponse('<h1>Pokemon Types</h1>'+ output)
