@@ -19,8 +19,15 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('task2', views.task2),
     path('', views.index),
+    path('task2home', views.task2home),
+    path('task2', views.task2),
     path('task3', views.task3),
-    path('pokemon', views.pokemon)
+    path('pokemon', views.pokemon),
+    path('allpokemon', views.allpokemon),
+    path('allabilities', views.allabilities),
+    path('allberries', views.allberries),
+    path('task3home', views.task3home),
+    path('task3bonus', views.task3bonus),
+    path('pokemoninfo', views.pokemoninfo),
 ]

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+  <head>
+  </head>
+
+  <body>
+      <h1>Type of {{pokemon}} is: </h1>
+      <ul></ul>
+        {% for i in list.types %}
+        <li>
+            {{i.type.name}}
+        </li>
+        {% endfor %}
+      </ul>
+      <img src={{img}} alt={{pokemon}}>
+  </body>
+</html>
