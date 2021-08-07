@@ -19,5 +19,8 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.pokemon) 
+    path('task2', views.task2),
+    path('', views.index),
+    path('task3', views.task3),
+    path('pokemon', views.pokemon)
 ]
