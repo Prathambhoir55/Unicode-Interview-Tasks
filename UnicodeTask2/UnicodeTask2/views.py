@@ -68,5 +68,6 @@ def pokemoninfo(request):
     x=requests.get('https://pokeapi.co/api/v2/pokemon/'+ pokemon)
     pokemon_dict=x.json() 
     img=pokemon_dict['sprites']['other']['official-artwork']['front_default']
-    return render(request, 'pokemoninfo.html',{'list': pokemon_dict, 'pokemon': pokemon, 'img':img}) 
+    img2=pokemon_dict['sprites']['other']['dream_world']['front_default']
+    return render(request, 'pokemoninfo.html',{'list': pokemon_dict, 'pokemon': pokemon, 'img':img, 'img2':img2}) 
     
